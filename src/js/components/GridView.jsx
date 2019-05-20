@@ -59,12 +59,15 @@ class GridView extends Component {
             return { backgroundColor: '#00bf23' };
         } else if (gpa >= 3.0 && gpa < 3.5){
             return { backgroundColor: '#dfe200' };
-        } else if (gpa >= 2.5 && gpa < 3.0) {
+        } else if (gpa >= 2.0 && gpa < 3.0) {
             return { backgroundColor: '#e29e00'};
+        } else {
+            return { backgroundColor: '#ed3700'};
         }
     }
 
     // TODO: add predefined filter buttons with "Current GPA w/filters" and perhaps some graphical display
+    // TODO: grid data not being updated
     render() {
         let orderedData = orderBy(this.state.gridData, this.state.sort);
         let pagedData = orderedData.slice(this.state.skip, this.state.take + this.state.skip);
