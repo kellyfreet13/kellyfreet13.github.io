@@ -14,3 +14,25 @@
     font-size: 20px;
     margin-bottom: 10px;
 }
+
+#gpa-descriptor {
+    margin-bottom: 20px;
+}
+
+#circle-inner {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    border: solid 3px #EFECEC;
+}
+
+#gpa {
+    margin-top: 23%;
+    display: inline-block;
+}
