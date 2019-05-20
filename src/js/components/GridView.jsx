@@ -55,11 +55,11 @@ class GridView extends Component {
     }
 
     getGpaColor = (gpa) => {
-        if (gpa > 3.5) {
+        if (gpa >= 3.5) {
             return { backgroundColor: '#00bf23' };
-        } else if (gpa > 3.0 && gpa < 3.5){
+        } else if (gpa >= 3.0 && gpa < 3.5){
             return { backgroundColor: '#dfe200' };
-        } else if (gpa > 2.5 && gpa < 3.0) {
+        } else if (gpa >= 2.5 && gpa < 3.0) {
             return { backgroundColor: '#e29e00'};
         }
     }
