@@ -10,6 +10,14 @@
     margin-top: 40px;
 }
 
+#button-group {
+    margin-bottom: 10px;
+}
+
+.clear-filter-button {
+    margin-left: 15px;
+}
+
 #grid-descriptor {
     font-size: 20px;
     margin-bottom: 10px;
