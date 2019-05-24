@@ -76,9 +76,22 @@ img {
     margin-bottom: 15px;
 }
 
+#about-hr {
+    margin-bottom: 0;
+}
+
 #name-header {
     font-size: 82px;
     margin-bottom: 20px;
+}
+
+.tiny-text {
+    font-size: 8pt;
+    margin-top: 0;
+}
+
+#about-me-title {
+    margin-bottom: 1px;
 }
 
 #university-container {
@@ -178,17 +191,17 @@ img {
 }
 
 /* ------------------- WORK VIEW ------------------- */
-#first-american-about-container {
+.work-about-container {
     margin-bottom: 15px;
 }
 
-#first-american-tasks-container {
+.work-tasks-container {
     clear: both;
     display: block;
     margin-left: 20px;
 }
 
-#first-american-title {
+.work-title {
     margin-bottom: 2px;
 }
 

@@ -13,8 +13,9 @@ class AboutView extends Component {
             <div className="centered-container">
                 <div id="name-header">Kelly Freet</div>
                 <div className="page-header">
-                    <h1>About Me</h1>
-                    <hr/>
+                    <h1 id="about-me-title">About Me</h1>
+                    <hr id="about-hr"/>
+                    <p className="tiny-text">Last Update: May 2019</p>
                 </div>
 
                 <h3 className="about-h3">University</h3>
@@ -43,7 +44,7 @@ class AboutView extends Component {
                     <h3>Interests</h3>
                     <p>
                         I co-founded the CSULB Chess Club in 2016 and was its President for 3 years.
-                        In my free time, I enjoy playing chess with friends in person and with strangers online.
+                        In my free time, I enjoy playing chess with friends in person and strangers online.
                         If you want to challenge me, send me a friend request on chess.com!
                         &nbsp;<a href="https://www.chess.com/member/speedster13">(My Profile)</a><br/>
                         I also enjoy exercising, attempting to eat healthy, drinking coffee, and playing piano.
