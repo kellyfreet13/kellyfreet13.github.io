@@ -6,6 +6,7 @@ import { Button, ButtonGroup } from '@progress/kendo-react-buttons'
 import transcript from '../transcript.json';
 import '../../styles.css';
 
+
 class GridView extends Component {
 
     state = {
@@ -165,48 +166,58 @@ class GridView extends Component {
         let gpa = this.calculateGpa().toPrecision(4);
         let gpaColor = this.getGpaColor(gpa);
         return (
-            <div id="grid-container">
-                <div id="grid-descriptor">
-                    Initially filtered by "Upper Division" courses. Try different combinations to see how it affects my GPA!
+            <div className="centered-container-academics">
+                <div className="page-header">
+                    <h1>Academics</h1>
+                    <hr/>
                 </div>
-                <div id="button-group">
-                    <ButtonGroup>
-                        <Button
-                            togglable={true}
-                            onClick={this.appendUpperFilter}
-                            className={this.state.upperDivToggle ? 'k-state-active' : null}
-                        >
-                            Upper Division
-                        </Button>
-                        <Button
-                            togglable={true}
-                            onClick={this.appendMajorFilter}
-                            className={this.state.categoryCSToggle ? 'k-state-active' : null}
-                        >
-                            Major Only
-                        </Button>
-                        <Button
-                            togglable={true}
-                            onClick={this.appendHonorsFilter}
-                            className={this.state.descrHonorsToggle ? 'k-state-active' : null}
-                        >
-                            Honors
-                        </Button>
-                    </ButtonGroup>
-                    <Button
-                        primary={false}
-                        togglable={false}
-                        onClick={this.clearFilters}
-                        className="clear-filter-button"
-                    >
-                        Clear Filters
-                    </Button>
-                </div>
-                <div id="gpa-descriptor">
-                    Current GPA with filters:
-                    <span id="circle-inner" style={gpaColor}>
-                        <span id="gpa">{gpa}</span>
-                    </span>
+                <h3 className="grade-title">Grade Data</h3>
+                <div id="grade-filter-and-gpa">
+                    <div id="filter-controls">
+                        <div id="grid-descriptor">
+                            Initially filtered by "Upper Division" courses. Try different combinations to see how it affects my GPA!
+                        </div>
+                        <div id="button-group">
+                            <ButtonGroup>
+                                <Button
+                                    togglable={true}
+                                    onClick={this.appendUpperFilter}
+                                    className={this.state.upperDivToggle ? 'k-state-active' : null}
+                                >
+                                    Upper Division
+                                </Button>
+                                <Button
+                                    togglable={true}
+                                    onClick={this.appendMajorFilter}
+                                    className={this.state.categoryCSToggle ? 'k-state-active' : null}
+                                >
+                                    Major Only
+                                </Button>
+                                <Button
+                                    togglable={true}
+                                    onClick={this.appendHonorsFilter}
+                                    className={this.state.descrHonorsToggle ? 'k-state-active' : null}
+                                >
+                                    Honors
+                                </Button>
+                            </ButtonGroup>
+                            <Button
+                                primary={false}
+                                togglable={false}
+                                onClick={this.clearFilters}
+                                className="clear-filter-button"
+                            >
+                                Clear Filters
+                            </Button>
+                        </div>
+                    </div>
+                    <div id="gpa-container">
+                        <div id="gpa-circle-container">
+                            <span id="circle-inner" style={gpaColor}>
+                                <span id="gpa">{gpa}</span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
 
                 <Grid
@@ -224,12 +235,12 @@ class GridView extends Component {
                     }}
                     data={filteredData}
                 >
-                    <Column field="CourseName" title="Name" width="120px" />
-                    <Column field="CourseBriefDescription" title="Description" />
-                    <Column field="Category" title="Category" width="120px" />
+                    <Column field="CourseName" title="Name" width="100px" />
+                    <Column field="CourseBriefDescription" title="Description" width="440px" />
+                    <Column field="Category" title="Category" width="100px" />
                     <Column field="Semester" title="Semester" width="120px" />
-                    <Column field="Year" title="Year" width="140px" />
-                    <Column field="GradeReceived" title="Grade" />
+                    <Column field="Year" title="Year" width="100px" />
+                    <Column field="GradeReceived" title="Grade" width="100px" />
                     <Column field="Division" title="Division" />
                 </Grid>
             </div>
