@@ -9,7 +9,7 @@ class ProjectsView extends Component {
             height: '390',
             width: '640',
             playerVars: { // https://developers.google.com/youtube/player_parameters
-                autoplay: 1
+                autoplay: 0
             }
         };
 
@@ -17,9 +17,10 @@ class ProjectsView extends Component {
             <div className="centered-container">
                 <div className="page-header">
                     <h1>Projects</h1>
-                    <hr/>
+                    <hr className="close-hr"/>
+                    <p><a href="https://github.com/kellyfreet13">My github</a></p>
                 </div>
-                <div>
+                <div className="project-item">
                     <h3 className="title">Engineering Honors Thesis</h3>
                     <p className="subtitle">Image Recognition and Object Manipulation in Autonomous Vehicles</p>
                     <p>
@@ -39,8 +40,23 @@ class ProjectsView extends Component {
                         opts={opts}
                     />
                 </div>
-                <div>
-                    <p>More to come...</p>
+                <div className="project-item">
+                    <h3 className="title">Streaming Service</h3>
+                    <p className="subtitle-close">Senior Project &middot; Backend with some Full-Stack</p>
+                    <p className="subtitle"><a href="https://github.com/kellyfreet13/streamosphere">Code Here</a></p>
+                    <p>
+                        Our team of 4 students built a web application that streams user media files stored on our
+                        cloud servers. The idea was to be a mix of netflix and google drive, while focusing on
+                        creating a user friendly interface. My focus on the project was everything API-related.
+                        I wrote the <b>RESTful API</b> service in <b>Go</b> with <b>gin-gonic</b> for handling http requests.
+                        I created the collections and sample documents in <b>MongoDB</b>, and also used the
+                        Go library <b>mongo-go-driver</b> to update, store, and retrieve data. Although the
+                        documentation for the mongo-go-driver was very immature - few examples with only
+                        simple use cases - I learned a lot from having to look directly at source code to understand
+                        how to accomplish what I wanted. I also wrote a good portion of the frontend
+                        in <b>React.js</b> and <b>integrated API calls</b> that I wrote into the frontend.
+
+                    </p>
                 </div>
             </div>
         );

@@ -14,7 +14,7 @@ class AboutView extends Component {
                 <div id="name-header">Kelly Freet</div>
                 <div className="page-header">
                     <h1 id="about-me-title">About Me</h1>
-                    <hr id="about-hr"/>
+                    <hr className="close-hr"/>
                     <p className="tiny-text">Last Update: May 2019</p>
                 </div>
 
