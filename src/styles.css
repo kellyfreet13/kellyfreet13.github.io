@@ -191,6 +191,10 @@ img {
 }
 
 /* ------------------- WORK VIEW ------------------- */
+.work-container {
+    margin-bottom: 50px;
+}
+
 .work-about-container {
     margin-bottom: 15px;
 }

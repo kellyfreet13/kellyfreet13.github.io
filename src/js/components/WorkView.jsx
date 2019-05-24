@@ -12,7 +12,7 @@ class WorkView extends Component {
                     <hr/>
                 </div>
 
-                <div>
+                <div className="work-container">
                     <div className="work-about-container">
                         <h3 className="work-title">First American Financial Corp.</h3>
                         <p className="subtitle-close">Software Engineering Intern - Database Solutions</p>
