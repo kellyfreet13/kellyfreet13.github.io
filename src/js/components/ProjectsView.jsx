@@ -39,6 +39,9 @@ class ProjectsView extends Component {
                         opts={opts}
                     />
                 </div>
+                <div>
+                    <p>More to come...</p>
+                </div>
             </div>
         );
     }

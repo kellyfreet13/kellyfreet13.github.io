@@ -12,10 +12,24 @@ class WorkView extends Component {
                     <hr/>
                 </div>
 
-                <h3 className="about-h3">First American Financial Corp.</h3>
-                <p className="subtitle">May 2018 - Present (1 year)</p>
                 <div id="first-american-container">
-
+                    <div id="first-american-about-container">
+                        <h3 id="first-american-title">First American Financial Corp.</h3>
+                        <p className="subtitle-close">Software Engineering Intern - Database Solutions</p>
+                        <p className="subtitle-close">May 2018 - Present (1 year)</p>
+                    </div>
+                    <div id="first-american-tasks-container">
+                        <ul>
+                            <li>
+                                I built a React.js web application with custom nested dropdown filters that filtered
+                                home title data in a KendoUI grid. This was the first instance of React.js being used in
+                                database solutions.
+                            </li>
+                            <li>
+                                More to come...
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         );

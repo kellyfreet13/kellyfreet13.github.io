@@ -5,6 +5,7 @@ import csulbLogo from '../../../resources/csulb-seal.jpg';
 import graduation from '../../../resources/graduation-siblings.jpg';
 import chessClub from '../../../resources/chessclub.jpg';
 import kellyChess from '../../../resources/kelly-chess.jpg';
+import skiing from '../../../resources/skiing.jpg';
 
 class AboutView extends Component {
     render() {
@@ -30,11 +31,12 @@ class AboutView extends Component {
                                 I completed my degree through the Engineering Honors Program
                                 with a 3.7 grade point average. Checkout the "Academic" tab for more details.
                             </p>
+                            {/* Add github link */}
                         </div>
                     </div>
                     <div className="col">
                         <img src={graduation} width="400px" height="365px" id="graduation-img"/>
-                        <div className="subtitle center-text">My siblings and me at graduation</div>
+                        <div className="subtitle center-text">My siblings and me at graduation.</div>
                     </div>
                 </div>
                 <div id="interests-container">
@@ -44,7 +46,7 @@ class AboutView extends Component {
                         In my free time, I enjoy playing chess with friends in person and with strangers online.
                         If you want to challenge me, send me a friend request on chess.com!
                         &nbsp;<a href="https://www.chess.com/member/speedster13">(My Profile)</a><br/>
-                        I also enjoy skiing, exercising, attempting to eat healthy, drinking coffee, and playing piano.
+                        I also enjoy exercising, attempting to eat healthy, drinking coffee, and playing piano.
                     </p>
                     <div className="row">
                         <div className="col">
@@ -61,6 +63,19 @@ class AboutView extends Component {
                             />
                             <div className="subtitle center-text">Me playing chess against a stranger.</div>
                         </div>
+                    </div>
+                    <div id="skiing-container">
+                        <p>
+                            I've also gotten into skiing in the past few months. Here's a picture of me in my nascent
+                            skiing career hitting a blue slope! (I know, I need to get my skiis closer together. I haven't
+                            had another photo taken once I've gained more skills and started doing double black runs. Now
+                            those are really fun!)
+                        </p>
+                        <img
+                            src={skiing}
+                            id="skiing-img"
+                        />
+                        <div className="subtitle center-text">Happily skiing in Mammoth, CA.</div>
                     </div>
                 </div>
             </div>

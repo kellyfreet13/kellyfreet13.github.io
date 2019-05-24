@@ -12,7 +12,7 @@ hr {
 }
 
 img {
-    align-self: flex-start;
+    /*align-self: flex-start;*/
     max-width: 100%;
 }
 
@@ -58,6 +58,19 @@ img {
 
 }
 
+.k-tabstrip-items {
+    font-size: 14pt !important;
+    width: 100% !important;
+    top: 0 !important;
+    position: sticky !important;
+    position: -webkit-sticky !important;
+    background-color: #efefef !important;
+    z-index: 100 !important;
+    -webkit-box-shadow: 0 0 2px 0 rgba(94,94,94,1);
+    -moz-box-shadow: 0 0 2px 0 rgba(94,94,94,1);
+    box-shadow: 0 0 2px 0 rgba(94,94,94,1);
+}
+
 /* ------------------- ABOUT VIEW ------------------- */
 .about-h3 {
     margin-bottom: 15px;
@@ -96,6 +109,19 @@ img {
     margin-left: 5px;
     margin-right: 5px;
     overflow: hidden;
+}
+
+#skiing-container {
+    margin-top: 40px;
+}
+
+#skiing-img {
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(194,194,194,1);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(194,194,194,1);
+    box-shadow: 0px 0px 5px 2px rgba(194,194,194,1);
+    border: solid 1px #0094d8;
+    width: 50%;
+    height: 50%;
 }
 
 /* ------------------- GRID VIEW ------------------- */
@@ -145,4 +171,25 @@ img {
 #gpa {
     margin-top: 23%;
     display: inline-block;
+}
+
+/* ------------------- WORK VIEW ------------------- */
+#first-american-about-container {
+    margin-bottom: 15px;
+}
+
+#first-american-tasks-container {
+    clear: both;
+    display: block;
+    margin-left: 20px;
+}
+
+#first-american-title {
+    margin-bottom: 2px;
+}
+
+.subtitle-close {
+    margin-top: 1px;
+    margin-bottom: 0px;
+    font-style: italic;
 }
