@@ -75,7 +75,7 @@ class AboutView extends Component {
                             src={skiing}
                             id="skiing-img"
                         />
-                        <div className="subtitle center-text">Happily skiing in Mammoth, CA.</div>
+                        <div className="subtitle skiing-subtitle">Happily skiing in Mammoth, CA.</div>
                     </div>
                 </div>
             </div>

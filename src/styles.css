@@ -124,6 +124,10 @@ img {
     height: 50%;
 }
 
+#skiing-subtitle {
+    margin-left: 15%;
+}
+
 /* ------------------- GRID VIEW ------------------- */
 #grade-filter-and-gpa {
     margin-bottom: 10px;
