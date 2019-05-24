@@ -66,10 +66,10 @@ class AboutView extends Component {
                     </div>
                     <div id="skiing-container">
                         <p>
-                            I've also gotten into skiing in the past few months. Here's a picture of me in my nascent
-                            skiing career hitting a blue slope! (I know, I need to get my skiis closer together. I haven't
-                            had another photo taken once I've gained more skills and started doing double black runs. Now
-                            those are really fun!)
+                            I've also gotten into skiing during late 2018 and early 2019. Here's a picture of me in my
+                            nascent skiing career hitting a blue slope! (I know, I need to get my skiis closer together)
+                            I haven't had another photo taken once I've gained more skills and started doing double
+                            black runs. Now those are really fun!)
                         </p>
                         <img
                             src={skiing}

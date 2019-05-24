@@ -21,12 +21,24 @@ class WorkView extends Component {
                     <div id="first-american-tasks-container">
                         <ul>
                             <li>
-                                I built a React.js web application with custom nested dropdown filters that filtered
-                                home title data in a KendoUI grid. This was the first instance of React.js being used in
-                                database solutions.
+                                I built a <b>React.js</b> web application with custom nested dropdown filters for
+                                home title data in a <b>KendoUI</b> grid. This was the first instance of React.js
+                                being used in database solutions.
                             </li>
                             <li>
-                                More to come...
+                                I created a <b>.NET</b> wrapper to serve web applications on client machines running
+                                our desktop application. The browser engine used in the desktop app was similar to IE7
+                                in its limitations, so we were unable to leverage modern web technologies such as React.js,
+                                or even anything greater than CSS 1.0. This wrapper allowed us to take advantage of the
+                                tools and niceties of modern frameworks and technologies to spend less time on gritty
+                                details and more time on productive programming.
+                            </li>
+                            <li>
+                                I wrote <b>Python</b> scripts to automate server liveness, reliability, and latency
+                                monitoring. I integrated these scripts into a managed service called App Dynamics to
+                                graphically display the data collected from periodically running these scripts. I then
+                                <b>created documentation</b> on how to create similar scripts and the subsequent
+                                integration process so the offshore team could take over future endeavours in this area.
                             </li>
                         </ul>
                     </div>
