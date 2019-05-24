@@ -44,7 +44,7 @@ class AboutView extends Component {
                         In my free time, I enjoy playing chess with friends in person and with strangers online.
                         If you want to challenge me, send me a friend request on chess.com!
                         &nbsp;<a href="https://www.chess.com/member/speedster13">(My Profile)</a><br/>
-                        I also enjoy exercising, attempting to eat healthy, drinking coffee, and playing piano.
+                        I also enjoy skiing, exercising, attempting to eat healthy, drinking coffee, and playing piano.
                     </p>
                     <div className="row">
                         <div className="col">
