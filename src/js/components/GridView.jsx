@@ -63,7 +63,7 @@ class GridView extends Component {
         if (gpa >= 3.5) {
             return { backgroundColor: '#00bf23' };
         } else if (gpa >= 3.0 && gpa < 3.5){
-            return { backgroundColor: '#dfe200' };
+            return { backgroundColor: '#ffc333' };
         } else if (gpa >= 2.0 && gpa < 3.0) {
             return { backgroundColor: '#e29e00'};
         } else {
@@ -94,7 +94,7 @@ class GridView extends Component {
             this.setState({ filter: curFilter })
         }
         let loc = !this.state.upperDivToggle;
-        this.setState({upperDivToggle: loc})
+        this.setState({upperDivToggle: loc});
     }
 
     appendMajorFilter = () => {
@@ -157,12 +157,19 @@ class GridView extends Component {
         console.log(e.filter);
     }
 
+    getGridData = () => {
+        let orderedData = orderBy(transcript, this.state.sort);
+        let filteredData = filterBy(orderedData, this.state.filter);
+        let pagedData = filteredData.slice(this.state.skip, this.state.take + this.state.skip);
+
+        return pagedData;
+    }
+
     // TODO: add predefined filter buttons with "Current GPA w/filters" and perhaps some graphical display
     // TODO: grid data not being updated
     render() {
-        let orderedData = orderBy(this.state.gridData, this.state.sort);
-        let pagedData = orderedData.slice(this.state.skip, this.state.take + this.state.skip);
-        let filteredData = filterBy(pagedData, this.state.filter);
+        console.log('grid re-rendered');
+        let data = this.getGridData();
         let gpa = this.calculateGpa().toPrecision(4);
         let gpaColor = this.getGpaColor(gpa);
         return (
@@ -233,7 +240,7 @@ class GridView extends Component {
                     onFilterChange={(e) => {
                         this.handleFilterChange(e);
                     }}
-                    data={filteredData}
+                    data={data}
                 >
                     <Column field="CourseName" title="Name" width="100px" />
                     <Column field="CourseBriefDescription" title="Description" width="440px" />

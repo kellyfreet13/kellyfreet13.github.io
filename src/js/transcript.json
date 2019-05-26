@@ -167,7 +167,7 @@
   {
     "CourseID": 15,
     "CourseName": "CECS 228H",
-    "CourseBriefDescription": "Discrete Structures",
+    "CourseBriefDescription": "Honors Discrete Structures",
     "Category": "CS",
     "Year": 2016,
     "Semester": "Fall",
@@ -189,7 +189,7 @@
   {
     "CourseID": 17,
     "CourseName": "CECS 282H",
-    "CourseBriefDescription": "C++ for Java Programmers",
+    "CourseBriefDescription": "Honors C++ for Java Programmers",
     "Category": "CS",
     "Year": 2016,
     "Semester": "Fall",
@@ -398,7 +398,7 @@
   {
     "CourseID": 36,
     "CourseName": "REC 340",
-    "CourseBriefDescription": "Leisure in Contemporary Society",
+    "CourseBriefDescription": "Honors Leisure in Contemporary Society",
     "Category": "GE",
     "Year": 2018,
     "Semester": "Fall",
@@ -442,7 +442,7 @@
   {
     "CourseID": 40,
     "CourseName": "DANC 373",
-    "CourseBriefDescription": "Nonverbal Comm. Interactive Mind Body",
+    "CourseBriefDescription": "Honors Nonverbal Comm. Interactive Mind Body",
     "Category": "GE",
     "Year": 2019,
     "Semester": "Spring",
