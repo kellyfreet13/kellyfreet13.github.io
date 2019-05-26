@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import YouTube from 'react-youtube';
 import '../../styles.css'
+import streamosphere from '../../../resources/streamosphere.png';
 
 class ProjectsView extends Component {
 
@@ -55,7 +56,43 @@ class ProjectsView extends Component {
                         simple use cases - I learned a lot from having to look directly at source code to understand
                         how to accomplish what I wanted. I also wrote a good portion of the frontend
                         in <b>React.js</b> and <b>integrated API calls</b> that I wrote into the frontend.
-
+                        I wrote all the server logic on <b>AWS EC2</b> and communicated with our <b>AWS S3</b> to
+                        fetch and store user media.
+                    </p>
+                    <img
+                        src={streamosphere}
+                        className="col"
+                        id="streamosphere-img"
+                    />
+                    <div className="subtitle center-text">The home view in our web-app.</div>
+                </div>
+                <div className="project-item">
+                    <h3 className="title">Facial Expression Recognition</h3>
+                    <p className="subtitle-close">Machine Learning</p>
+                    <p className="subtitle"><a href="https://github.com/kellyfreet13/FacialRecognition">Code Here</a></p>
+                    <p>
+                        I implemented a VGG-style facial expression classifier with <b>Python</b> and <b>Keras</b>.
+                        I used Keras' data augmentation tools and trained on a VM instance
+                        on <b>Google Cloud Platform</b> for their inexpensive GPU costs.
+                    </p>
+                </div>
+                <div className="project-item">
+                    <h3 className="title">N-Queens Solver</h3>
+                    <p className="subtitle-close">Artificial Intelligence</p>
+                    <p className="subtitle"><a href="https://github.com/kellyfreet13/NQueens">Code Here</a></p>
+                    <p>
+                        A genetic solution to the N-Queens problem using <b>Python</b> for my Artificial Intelligence
+                        course.
+                    </p>
+                </div>
+                <div className="project-item">
+                    <h3 className="title">Encryption Malware</h3>
+                    <p className="subtitle-close">Security</p>
+                    <p className="subtitle"><a href="https://github.com/kellyfreet13/Encryption-Malware">Code Here</a></p>
+                    <p>
+                        This project uses <b>Python</b> to recursively encrypt files in a directory,
+                        so don't run it in your C drive!
+                        I used RSA to encrypt the public and private keys, and AES in CBC mode for file encryption.
                     </p>
                 </div>
             </div>

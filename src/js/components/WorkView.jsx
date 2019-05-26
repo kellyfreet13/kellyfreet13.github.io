@@ -53,9 +53,8 @@ class WorkView extends Component {
                             </li>
                             <li>
                                 I worked to <b>combine existing customer order services</b> into a cohesive unit.
-                                I built the skeleton for the service, as can be seen
-                                &nbsp;<b>
-                                <a href="https://support.datatracetitle.com/new-feature-order-management">here</a>
+                                I built the skeleton for the service, as can be seen &nbsp;
+                                <b><a href="https://support.datatracetitle.com/new-feature-order-management">here</a>
                                 &nbsp;</b>
                                 in almost pure <b>Javascript</b> with some <b>jQuery</b> (which I now despise) and
                                 handed the project off to the offshore team for complete integration.
@@ -74,8 +73,8 @@ class WorkView extends Component {
                             <li>
                                 Near the end of my last semester, I began working remotely and less hours due to the
                                 need to focus on school and complete my Thesis. During these few weeks,
-                                I <b>maintained websites</b> for the marketing team using mainly just plain old
-                                <b>HTML</b> and <b>CSS</b>.
+                                I <b>maintained websites</b> for the marketing team using mainly just
+                                plain old <b>HTML</b> and <b>CSS</b>.
                             </li>
                             <li>
                                 I made many great friends and learned alongside them.
