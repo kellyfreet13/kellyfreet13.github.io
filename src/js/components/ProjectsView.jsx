@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import YouTube from 'react-youtube';
 import '../../styles.css'
 import streamosphere from '../../../resources/streamosphere.png';
+import vgg from '../../../resources/vgg.png';
 
 class ProjectsView extends Component {
 
@@ -73,8 +74,19 @@ class ProjectsView extends Component {
                     <p>
                         I implemented a VGG-style facial expression classifier with <b>Python</b> and <b>Keras</b>.
                         I used Keras' data augmentation tools and trained on a VM instance
-                        on <b>Google Cloud Platform</b> for their inexpensive GPU costs.
+                        on <b>Google Cloud Platform</b> for their inexpensive GPU costs. I tweaked some of the standard
+                        VGG model's layers (including dropping the '5th block') due to the small input size of
+                        the training data, in order to increase the number of trainable parameters in the dense layers.
+                        I also found that using Global Max Pooling instead of simply Flattening the last layer before
+                        the FC layer, as well as removing a FC layer improved performance.
+                        The small number of epochs was intentional to save GPU
+                        consumption over many iterations to try to keep expenses to a minimum. I achieved
+                        roughly <b>82% test accuracy</b> after just 20 epochs.
                     </p>
+                    <img
+                        src={vgg}
+                    />
+                    <div className="subtitle center-text">Model Accuracy and Loss during training and validation.</div>
                 </div>
                 <div className="project-item">
                     <h3 className="title">N-Queens Solver</h3>
