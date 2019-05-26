@@ -25,15 +25,15 @@ class ProjectsView extends Component {
                     <h3 className="title">Engineering Honors Thesis</h3>
                     <p className="subtitle">Image Recognition and Object Manipulation in Autonomous Vehicles</p>
                     <p>
-                        The focus of my Honors Thesis was on Computer Vision. The larger, ongoing
+                        The focus of my Honors Thesis was on <b>Computer Vision</b>. The larger, ongoing
                         project under the direction of Dr. Ponce sought to create a network of
                         autonomous vehicles equipped with robotic arms whose goal was to communicate
                         amongst each other to move a variable-weight box. In other words, the box could require
                         one to many vehicles to move it. My finer focus of the project was on the
                         recognition of a specified goal object using Aruco markers, the calculation of distance vectors
                         related to that object, and the subsequent movement towards the object. I
-                        used Python and OpenCV for computer vision utilities, which ran on a Raspberry
-                        Pi onboard the vehicle. I used a Raspberry Pi Camera in order to recognize
+                        used <b>Python</b> and <b>OpenCV</b> for computer vision utilities, which ran
+                        on a <b>Raspberry Pi</b> onboard the vehicle. I used a Raspberry Pi Camera in order to recognize
                         images.
                     </p>
                     <YouTube
